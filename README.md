@@ -1,12 +1,11 @@
 
-# BudgetBook v2
+# BudgetBook Ready
 
-Hierarchy-based budget tracking with:
+A full-featured budget tracker with:
+
 - Sections → Subsections → Items
-- Collapsible UI
-- Totals at every level
-- Optional descriptions & links
-- Light/dark theme toggle
-- LocalStorage for saving
-
-Great on desktop & mobile.
+- Collapsible layout
+- Min/Max totals at all levels
+- Clean mobile-ready UI
+- Dark/light mode
+- LocalStorage saving
