@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BudgetBook Lite</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>BudgetBook</h1>
+    <div class="controls">
+      <span>Total Budget: <strong id="total">$0.00</strong></span>
+      <button id="theme-toggle">🌓</button>
+      <button id="add-section">+ Add Section</button>
+    </div>
+  </header>
+  <main id="section-container">
+    <p class="no-data">No sections yet. Tap “Add Section” to begin.</p>
+  </main>
+
+  <!-- Modals -->
+  <div id="modal" class="hidden">
+    <div id="modal-content">
+      <h2 id="modal-title"></h2>
+      <form id="modal-form">
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="text" id="description" placeholder="Description (optional)" />
+        <input type="text" id="link" placeholder="Link (optional)" />
+        <input type="number" step="0.01" id="min" placeholder="Min Price" required />
+        <input type="number" step="0.01" id="max" placeholder="Max Price (optional)" />
+        <button type="submit">Save</button>
+        <button type="button" id="cancel">Cancel</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

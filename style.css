@@ -1,0 +1,91 @@
+
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --accent: #007bff;
+  --sub: #2ecc71;
+}
+
+[data-theme="dark"] {
+  --bg: #121212;
+  --text: #f0f0f0;
+  --accent: #66b0ff;
+  --sub: #00d68f;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: var(--accent);
+  color: white;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+h1 {
+  margin: 0;
+}
+
+.controls {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+main {
+  padding: 1em;
+}
+
+.no-data {
+  text-align: center;
+  margin-top: 2em;
+}
+
+#modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal-content {
+  background: var(--bg);
+  color: var(--text);
+  padding: 2em;
+  border-radius: 8px;
+  min-width: 300px;
+}
+
+.hidden {
+  display: none;
+}
+
+form input {
+  display: block;
+  width: 100%;
+  margin: 0.5em 0;
+  padding: 0.5em;
+  font-size: 1em;
+}
